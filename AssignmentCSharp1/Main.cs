@@ -2,28 +2,26 @@
 
 class Program
 {
-    /// <summary>
-    /// The entry point of the Hero RPG application.
-    /// </summary>
+    
+    /// The entry point of the Hero RPG application
     /// <param name="args">Command-line arguments (not used).</param>
     static void Main(string[] args)
     {
         // Welcome message
-        Console.WriteLine("Welcome to Hero Academy!");
+        Console.WriteLine("Welcome to Al Qaeda Training Facility!");
 
         // Create and test heroes
         TestHero(new Wizard("Voldemort"));
         TestHero(new Archer("Robin Hood"));
-        TestHero(new Swashbuckler("Vegeta"));
+        TestHero(new Swashbuckler("Krillin"));
         TestHero(new Barbarian("Broly"));
 
         // Program completed
         Console.WriteLine("\nThank you for playing!");
     }
 
-    /// <summary>
+   
     /// Test a hero by leveling up, equipping items, and displaying information.
-    /// </summary>
     /// <param name="hero">The hero to test.</param>
     static void TestHero(Hero hero)
     {

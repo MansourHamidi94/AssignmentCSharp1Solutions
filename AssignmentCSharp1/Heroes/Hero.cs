@@ -98,7 +98,7 @@ public abstract class Hero
         // Create a string representation of the hero's state and return it.
         // Include Name, Class, Level, Total Strength, Total Dexterity, Total Intelligence, and Damage.
         HeroAttribute attributes = TotalAttributes();
-        int damage = Damage(); // You might need to modify the Damage method to return an int.
+        int damage = Damage();
         string heroState = $"Name: {Name}\nClass: {this.GetType().Name}\nLevel: {Level}\n";
         heroState += $"Total Strength: {attributes.Strength}\n";
         heroState += $"Total Dexterity: {attributes.Dexterity}\n";
