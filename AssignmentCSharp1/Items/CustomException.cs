@@ -1,5 +1,4 @@
 ﻿using System.Runtime.Serialization;
-// IT CREATED THIS AS A SOLUTION, THIS IS NOT SOMETHING IVE DONE - MANSOUR.
 [Serializable]
 internal class CustomException : Exception
 {

@@ -37,7 +37,7 @@ public abstract class Hero
 
             if (!ValidWeaponTypes.Contains(weapon.WeaponType))
             {
-                throw new InvalidWeaponException($"Invalid weapon type for {this.GetType().Name}: {weapon.WeaponType}");
+                throw new InvalidWeaponException($"Invalid weapon type for {GetType().Name}: {weapon.WeaponType}");
             }
 
             if (Level < weapon.RequiredLevel)
