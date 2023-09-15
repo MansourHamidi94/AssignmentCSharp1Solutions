@@ -37,7 +37,7 @@ public abstract class Hero
 
             if (!ValidWeaponTypes.Contains(weapon.WeaponType))
             {
-                throw new InvalidWeaponException($"Invalid weapon type for {GetType().Name}: {weapon.WeaponType}");
+                throw new InvalidWeaponException($"Invalid weapon type for {this.GetType().Name}: {weapon.WeaponType}");
             }
 
             if (Level < weapon.RequiredLevel)
@@ -98,7 +98,7 @@ public abstract class Hero
         // Create a string representation of the hero's state and return it.
         // Include Name, Class, Level, Total Strength, Total Dexterity, Total Intelligence, and Damage.
         HeroAttribute attributes = TotalAttributes();
-        int damage = Damage();
+        int damage = Damage(); 
         string heroState = $"Name: {Name}\nClass: {this.GetType().Name}\nLevel: {Level}\n";
         heroState += $"Total Strength: {attributes.Strength}\n";
         heroState += $"Total Dexterity: {attributes.Dexterity}\n";

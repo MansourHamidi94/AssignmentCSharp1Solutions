@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         // Welcome message
-        Console.WriteLine("Welcome to Al Qaeda Training Facility!");
+        Console.WriteLine("Welcome to Al Qaeda Training Faci!");
 
         // Create and test heroes
         TestHero(new Wizard("Voldemort"));
